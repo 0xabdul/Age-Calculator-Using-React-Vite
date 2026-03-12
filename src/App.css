@@ -1,0 +1,149 @@
+.first-cont{
+    display: flex;
+    gap:2rem;
+}
+.dayinput,.monthinput,.yearinput{
+    height:2.5rem;
+    width:7rem;
+    font-size:1.3rem;
+    font-weight:900;
+    padding:0.3rem;
+    border-color: hsl(0, 0%, 86%);
+    border-style: solid;
+    border-width:0.1rem;
+    border-radius:0.5rem;
+}
+.sec-flex{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.arrow{
+    display:grid;
+}
+.line{
+    padding-top:2rem;
+}
+.arrow{
+    background-color: hsl(259, 100%, 65%);
+    padding:0.7rem;
+    border-radius:50%;
+    height:2.5rem;
+}
+.stline{
+    border-style:solid;
+    border-width:0.1rem;
+    color:hsl(0, 0%, 94%);
+}
+.year,.month,.day{
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    font-size:4.5rem;
+    font-weight: 800;
+}
+.col-change-day,.col-change-year,.col-change-month{
+    color:hsl(0, 1%, 44%);
+    font-weight:600;
+    font-size:0.8rem;
+    letter-spacing:0.2rem;
+}
+.sec-flex p{
+    margin:0;
+}
+.dataone,.datatwo,.datathree{
+    color:hsl(259, 100%, 65%);
+    font-size:4.5rem;
+    font-weight: 1000;
+}
+.line-height p{
+    margin: 0;
+}
+.line-height{
+    line-height:5.5rem;
+    font-style: italic;
+}
+.container{
+    background-color:white;
+    padding:3.5rem;
+    border-radius:1.5rem 1.5rem 10rem 1.5rem;
+    width:40rem;
+}
+.errday,.errmonth,.erryear{
+    color:hsl(0, 100%, 67%);
+    font-size:0.8rem;
+    display: none;
+}
+@media (max-width:770px) {
+    .container{
+        width:80vw;
+    }
+    .sec-flex{
+        padding-top:1.5rem;
+    }
+}
+@media (max-width:550px) {
+    .sec-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .line-height{
+       padding-top:4rem;
+    }
+    .sec-flex{
+        padding-top:3rem;
+    }
+    .errday,.errmonth,.erryear{
+        font-size:0.6rem;
+    }
+    .dayinput,.monthinput,.yearinput{
+        width:25vw;
+    }
+    .first-cont{
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+    }
+    .year,.month,.day{
+        font-size:3rem;
+    }
+    .dataone,.datatwo,.datathree{
+        font-size:3rem;
+    }
+    .container{
+        width:72vw;
+    }
+}
+@media (max-width:400px) {
+    .container{
+        width:68vw;
+    }
+    .arrow{
+        right:10rem;
+        top:20.6rem;
+    }
+    .year,.month,.day{
+        font-size:10vw;
+    }
+    .dataone,.datatwo,.datathree{
+        font-size:10vw;
+    }
+}
+@media (max-width:280px) {
+    .container{
+        width:67vw;
+    }
+    .arrow{
+        right:7rem;
+    }
+     .year,.month,.day{
+        font-size:9vw;
+    }
+    .dataone,.datatwo,.datathree{
+        font-size:10vw;
+    }
+    .dayinput,.monthinput,.yearinput{
+        width:22vw;
+    }
+}
